@@ -1,0 +1,8 @@
+1.)display all record who joined in february-81 and getting comm. more than 400
+
+  SELECT * FROM EMP WHERE (HIREDATE BETWEEN '01-FEB-81' AND '28-FEB-81') AND COMM>400;
+   SELECT * FROM EMP WHERE HIREDATE LIKE '%__FEB-81' AND COMM>400;
+
+2.)display total no. of people who are not getting comm.
+
+    SELECT COUNT(EMPNO) FROM EMP WHERE COMM IS NULL OR COMM=0;
